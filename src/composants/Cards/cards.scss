@@ -1,0 +1,15 @@
+.cards-gallery {
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    padding: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards-list {
+    display: grid;
+    gap: 30px;
+}
+
+.cards {
+    border-radius: 10px;
+}
