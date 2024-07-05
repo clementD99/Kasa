@@ -1,7 +1,10 @@
-import './sass/App.scss';       // Pour que React fonctionne correctement mettre le css, images en haut
-import logo from './images/logo.png';
-import React from 'react';
-                                    
+import "./sass/App.scss"; // Pour que React fonctionne correctement importer le css, images en haut
+import logo from "./images/logo.png";
+import Banner from "./composants/Banner/Banner";
+// import Footer from "./composants/Footer/Footer"; 
+import "./sass/banner.scss";
+import React from "react";
+
 function App() {
   return (
     <div className="App">
@@ -10,8 +13,10 @@ function App() {
         <ul className="App-nav">
           <li>Accueil</li>
           <li>À propos</li>
-          </ul>       
+        </ul>
       </header>
+      <Banner />
+      {/* <Footer /> */}
     </div>
   );
 }
