@@ -1,0 +1,20 @@
+.collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: #ff6060;
+  width: 100%;
+}
+
+.collapse h1 {
+  font-size: 24px;
+}
+
+.collapse p {
+  font-size: 18px;
+}
+
+.collapse i {
+    color: white;
+}
