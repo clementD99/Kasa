@@ -1,23 +1,27 @@
-import "./sass/App.scss"; // Pour que React fonctionne correctement importer le css, images en haut
-import logo from "./images/logo.png";
-import Banner from "./composants/Banner/Banner";
-// import Footer from "./composants/Footer/Footer"; 
-import "./sass/banner.scss";
-import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./composants/Header/Header";
+import ImageHeader from "./composants/ImageHeader/ImageHeader";
+import Cards from "./composants/Cards/Cards";
+import Footer from "./composants/Footer/Footer";
+import Accueil from "./pages/Accueil/Accueil";
+import Apropos from "./pages/Apropos/Apropos";
+import Erreur from "./composants/Erreur/Erreur";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo de Kasa"></img>
-        <ul className="App-nav">
-          <li>Accueil</li>
-          <li>À propos</li>
-        </ul>
-      </header>
-      <Banner />
-      {/* <Footer /> */}
-    </div>
+    <Router>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Accueil />} />
+          <Route path="/apropos" element={<Apropos />} />
+          <Route path="*" element={<Erreur />} />
+        </Routes>
+        <ImageHeader />
+        <Cards />
+      </main>
+      <Footer />
+    </Router>
   );
 }
 
