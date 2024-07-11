@@ -1,7 +1,11 @@
+import ImageHeader from "../../composants/ImageHeader/ImageHeader";
+import Cards from "../../composants/Cards/Cards";
+
 function Accueil() {
   return (
     <div className="accueil">
-      <h1></h1>
+      <ImageHeader />
+      <Cards />
     </div>
   );
 }
