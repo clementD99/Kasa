@@ -10,8 +10,9 @@ function Collapse({ title, content }) {
 
   return (
     <div className="collapse-barre">
-      <div onClick={toggleCollapse}>
+      <div className="collapse-titre" onClick={toggleCollapse}>
         {title}
+        <i className={`fa-solid ${isOpen ? 'fa-chevron-down' : 'fa-chevron-up'}`}></i>
       </div>
       {isOpen && <div className="collapse-contenu">{content}</div>}
     </div>
