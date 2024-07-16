@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./composants/Header/Header";
-// import ImageHeader from "./composants/ImageHeader/ImageHeader";
-// import Cards from "./composants/Cards/Cards";
 import Footer from "./composants/Footer/Footer";
 import Accueil from "./pages/Accueil/Accueil";
 import Apropos from "./pages/Apropos/Apropos";
@@ -16,9 +14,8 @@ function App() {
           <Route path="/" element={<Accueil />} />
           <Route path="/apropos" element={<Apropos />} />
           <Route path="*" element={<Erreur />} />
+          <Route path="/logement/id" element={<logements/>} />
         </Routes>
-        {/* <ImageHeader />
-        <Cards /> */}
       </main>
       <Footer />
     </Router>
