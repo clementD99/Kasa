@@ -1,23 +1,21 @@
 .cards-gallery {
-    display: grid;
-    justify-content: center;
-    background-color: #f6f6f6;
-    border-radius: 25px;
-    padding: 30px;
-    gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  background-color: #f6f6f6;
+  padding: 30px;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .cards-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 340px;
-    width: 340px;
-    background: red;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 340px;
+  width: 100%;
+  background: red;
+  border-radius: 10px;
 }
 
 .cards {
-    border-radius: 10px;
+  border-radius: 10px;
 }
