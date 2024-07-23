@@ -1,11 +1,16 @@
 import "../Erreur/erreur.scss";
+import { Link } from "react-router-dom";
+import erreur from "../../images/erreur/404.png";
 
 function Erreur() {
   return (
     <div className="erreur">
-      <h1 className="erreur-404">404</h1>
+      <img src={erreur}></img>
       <p className="erreur-text">
         Oups ! La page que vous demandez n'existe pas.
+      </p>
+      <p className="erreur-retour">
+        <Link to="/">Retourner sur la page d’accueil</Link>
       </p>
     </div>
   );
