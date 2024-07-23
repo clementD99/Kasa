@@ -1,18 +1,27 @@
 .erreur {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .erreur-404 {
-    font-size: 100px;
-    font-weight: 700;
-    color: #ff6060;
+  font-size: 100px;
+  font-weight: 700;
+  color: #ff6060;
 }
 
 .erreur-text {
-    font-size: 36px;
-    font-weight: 500;
-    color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+.erreur-retour {
+  font-size: 18px;
+}
+
+.erreur a {
+  text-decoration: none;
+  color: #000000;
 }
