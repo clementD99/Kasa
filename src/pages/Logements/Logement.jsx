@@ -1,4 +1,5 @@
 // ----- Code pour la récupération des logements ----- //
+
 import React, { useState, useEffect } from "react";
 import { useParams, Navigate } from 'react-router-dom';
 import Carousel from '../../composants/Carousel/Carousel';
@@ -28,7 +29,6 @@ const Logement = () => {
     };
 
     fetchData();
-    console.log(logement)
   }, [id]);
 
   if (isLoading) {
@@ -44,26 +44,24 @@ const Logement = () => {
   }
 
   return (
-    <div class="logement">
-      {/* <Carousel /> */}
-      <div class="logement-section1">
-        <div class="logement-section1-text">
-          <h2>Cozy loft on the Canal Saint-Martin</h2>
-          <p>Paris, Île-de-France</p>
+    <div className="logement">
+      {logement.pictures && logement.pictures.length > 0 ? (
+        <Carousel pictures={logement.pictures} />
+      ) : (
+        <div>Aucune image disponible</div>
+      )}
+      <div className="logement-section1">
+        <div className="logement-section1-text">
+          <h1>{logement.title}</h1>
+          <p>{logement.location}</p>
         </div>
-
         {/* <Profil /> */}
       </div>
-      <div class="tags">
+      <div className="tags">
         {logement.tags.map((tag, index) => (
-          <Tag name={tag} key={index}/>
+          <Tag name={tag} key={index} />
         ))}
       </div>
-      {/* <div>
-        <h1>{logement.title}</h1>
-        <p>{logement.description}</p>
-        <img src={logement.pictures} alt={logement.title} />
-      </div> */}
     </div>
   );
 };
