@@ -1,28 +1,39 @@
+.logement {
+  display: flex;
+  flex-direction: column;
+}
+
 .carte-logement img {
   width: 100%;
   overflow: hidden;
   border-radius: 25px;
 }
 
-.carte-logement-titre {
-  display: flex;
-  flex-direction: column;
+// .carte-logement-titre {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.logement-description {
+  width: 100%;
 }
 
-.logement-section1-text {
+.logement-titre {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
 
-  h1 {
-    font-size: 36px;
-    color: #ff6060;
-    margin: 0;
-    margin-bottom: 8px;
-  }
+.logement-titre h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+  margin: 0;
+  margin-bottom: 8px;
+}
 
-  p {
-    font-size: 18px;
-    margin: 0;
-  }
+.logement-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
 }
