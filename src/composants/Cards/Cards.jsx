@@ -25,7 +25,7 @@ function Cards() {
     };
 
     fetchData();
-  }, []); // Le tableau vide signifie que cet effet ne se déclenche qu'une fois après le montage du composant
+  }, []);
 
   if (isLoading) {
     return <div>Chargement...</div>;
