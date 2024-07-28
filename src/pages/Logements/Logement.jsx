@@ -1,9 +1,11 @@
 // ----- Code pour la récupération des logements ----- //
 
 import React, { useState, useEffect } from "react";
-import { useParams, Navigate } from 'react-router-dom';
-import Carousel from '../../composants/Carousel/Carousel';
-import Tag from '../../composants/Tag/Tag';
+import "../../pages/Logements/logement.scss";
+import { useParams, Navigate } from "react-router-dom";
+import Carousel from "../../composants/Carousel/Carousel";
+import Tag from "../../composants/Tag/Tag";
+import Profil from "../../composants/Profil/Profil";
 
 const Logement = () => {
   const { id } = useParams();
@@ -14,12 +16,12 @@ const Logement = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/logements.json');
+        const response = await fetch("/logements.json");
         if (!response.ok) {
-          throw new Error('Erreur lors de la récupération des données');
+          throw new Error("Erreur lors de la récupération des données");
         }
         const result = await response.json();
-        const foundLogement = result.find(logement => logement.id === id);
+        const foundLogement = result.find((logement) => logement.id === id);
         setLogement(foundLogement);
       } catch (error) {
         setError(error.message);
@@ -50,12 +52,14 @@ const Logement = () => {
       ) : (
         <div>Aucune image disponible</div>
       )}
-      <div className="logement-section1">
-        <div className="logement-section1-text">
+      <div className="logement-description">
+        <div className="logement-titre">
           <h1>{logement.title}</h1>
+          <Profil host={logement.host} />
+        </div>
+        <div className="logement-text">
           <p>{logement.location}</p>
         </div>
-        {/* <Profil /> */}
       </div>
       <div className="tags">
         {logement.tags.map((tag, index) => (
