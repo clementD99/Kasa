@@ -1,7 +1,20 @@
 .tags {
   display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .tag {
+  color: #ffffff;
+  background: #ff6060;
+  border-radius: 10px;
+  height: 20px;
+  width: 10%;
+}
+
+.tag p {
   font-size: 14px;
+  font-weight: 700;
+  margin: 0;
 }
