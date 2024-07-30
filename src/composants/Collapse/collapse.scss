@@ -22,6 +22,8 @@
 }
 
 .collapse-contenu {
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   color: black;
   background-color: #f6f6f6;
@@ -29,6 +31,19 @@
 }
 
 .collapse i {
+  position: absolute;
+  right: 10px;
+}
+
+// Le code css ci-dessous est pour sa mise en forme dans Logement.jsx //
+
+.collapse-logements {
+  display: flex;
+  gap: 100px;
+  margin-top: 25px;
+}
+
+.collapse-logements i {
   position: absolute;
   right: 10px;
 }
