@@ -8,8 +8,8 @@ function Profil({ host }) {
 
   return (
     <div className="profil">
-      <span className="nom-proprietaire">{host.name}</span>
-      <img className="photo-proprietaire" src={host.picture} alt={host.name} />
+      <span className="profil-nom">{host.name}</span>
+      <img className="profil-photo" src={host.picture} alt={host.name} />
     </div>
   );
 }
