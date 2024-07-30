@@ -1,4 +1,18 @@
+.profil {
+  display: flex;
+}
+
 .profil-nom {
-    font-size: 18px;
-    color: #ff6060;
+  font-size: 18px;
+  color: #ff6060;
+  text-align: right;
+  width: 88px;
+  position: relative;
+  left: -10px;
+  top: 10px;
+}
+
+.profil-photo {
+  height: 64px;
+  border-radius: 60px;
 }
