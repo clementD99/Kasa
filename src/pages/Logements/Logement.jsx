@@ -6,6 +6,8 @@ import { useParams, Navigate } from "react-router-dom";
 import Carousel from "../../composants/Carousel/Carousel";
 import Tag from "../../composants/Tag/Tag";
 import Profil from "../../composants/Profil/Profil";
+import Rate from "../../composants/Rate/Rate";
+import Collapse from "../../composants/Collapse/Collapse";
 
 const Logement = () => {
   const { id } = useParams();
@@ -65,6 +67,11 @@ const Logement = () => {
         {logement.tags.map((tag, index) => (
           <Tag name={tag} key={index} />
         ))}
+        <Rate rating={logement.rating} />
+      </div>
+      <div className="collapse-logements">
+        <Collapse title="Description" content={logement.description} />
+        <Collapse title="Équipements" content={logement.equipments} />
       </div>
     </div>
   );
