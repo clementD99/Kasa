@@ -1,7 +1,11 @@
 .tags {
   display: flex;
-  text-align: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.tags-list {
+  display: flex;
   gap: 10px;
 }
 
@@ -9,8 +13,7 @@
   color: #ffffff;
   background: #ff6060;
   border-radius: 10px;
-  height: 20px;
-  width: 10%;
+  padding: 10px;
 }
 
 .tag p {
