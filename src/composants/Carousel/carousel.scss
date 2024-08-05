@@ -12,12 +12,15 @@
   border-radius: 25px;
   overflow: hidden;
   object-fit: cover;
+
+  @media (max-width: 375px) {
+    height: 255px;
+    width: 335px;
+  }
 }
 
 .carousel-button {
   cursor: pointer;
-  background: none;
-  border: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
