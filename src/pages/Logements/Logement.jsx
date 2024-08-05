@@ -64,9 +64,11 @@ const Logement = () => {
         </div>
       </div>
       <div className="tags">
-        {logement.tags.map((tag, index) => (
-          <Tag name={tag} key={index} />
-        ))}
+        <div className="tags-list">
+          {logement.tags.map((tag, index) => (
+            <Tag name={tag} key={index} />
+          ))}
+        </div>
         <Rate rating={logement.rating} />
       </div>
       <div className="collapse-logements">
