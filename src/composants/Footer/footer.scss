@@ -10,9 +10,17 @@
 .footer-img {
   width: auto;
   color: white;
+
+  @media (max-width: 375px) {
+    height: 40px;
+  }
 }
 
 .footer-text {
   font-size: 24px;
   color: white;
+
+  @media (max-width: 375px) {
+    font-size: 12px;
+  }
 }
