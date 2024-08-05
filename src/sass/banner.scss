@@ -1,6 +1,10 @@
 .banner {
   position: relative;
   margin-bottom: 30px;
+
+  @media (max-width: 375px) {
+    margin-bottom: 0;
+  }
 }
 
 .banner-img {
@@ -9,6 +13,13 @@
   border-radius: 10px;
   margin-top: 50px;
   object-fit: cover;
+  filter: brightness(0.5);
+
+  @media (max-width: 375px) {
+    width: 335px;
+    height: 111px;
+    margin-top: 0;
+  }
 }
 
 .banner-text {
@@ -19,4 +30,8 @@
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: 375px) {
+    font-size: 24px;
+  }
 }
