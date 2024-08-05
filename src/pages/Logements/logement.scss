@@ -9,11 +9,6 @@
   border-radius: 25px;
 }
 
-// .carte-logement-titre {
-//   display: flex;
-//   flex-direction: column;
-// }
-
 .logement-description {
   width: 100%;
 }
@@ -36,4 +31,22 @@
   font-weight: 500;
   color: #000000;
   margin: 0;
+}
+
+// Le code css ci-dessous est pour sa mise en forme dans Logement.jsx //
+
+.logement .collapse-logements {
+  display: flex;
+  gap: 100px;
+  margin-top: 25px;
+}
+
+.logement .collapse-logements i {
+  position: absolute;
+  right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logement .collapse-logements i.rotate {
+  transform: rotate(180deg);
 }
