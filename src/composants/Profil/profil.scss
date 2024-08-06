@@ -10,9 +10,17 @@
   position: relative;
   left: -10px;
   top: 10px;
+
+  @media (max-width: 375px) {
+    font-size: 12px;
+  }
 }
 
 .profil-photo {
   height: 64px;
   border-radius: 60px;
+
+  @media (max-width: 375px) {
+    height: 32px;
+  }
 }
