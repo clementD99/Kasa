@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   @media (max-width: 375px) {
-    padding: 20px 20px 0 20px;
+    padding: 20px 0 0 0;
   }
 }
 
@@ -16,11 +16,9 @@ code {
     monospace;
 }
 
-// main {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 30px;
-// }
+main {
+  padding: 0 20px 0 20px;
+}
 
 #root {
   display: flex;
