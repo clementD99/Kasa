@@ -1,6 +1,5 @@
 .logement {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
 .carte-logement img {
@@ -10,7 +9,12 @@
 }
 
 .logement-description {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+  }
 }
 
 .logement-titre {
@@ -24,6 +28,10 @@
   color: #ff6060;
   margin: 0;
   margin-bottom: 8px;
+
+  @media (max-width: 375px) {
+    font-size: 18px;
+  }
 }
 
 .logement-text {
@@ -31,6 +39,10 @@
   font-weight: 500;
   color: #000000;
   margin: 0;
+
+  @media (max-width: 375px) {
+    font-size: 14px;
+  }
 }
 
 // Le code css ci-dessous est pour sa mise en forme dans Logement.jsx //
@@ -39,6 +51,11 @@
   display: flex;
   gap: 100px;
   margin-top: 25px;
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .logement .collapse-logements i {
