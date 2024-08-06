@@ -3,25 +3,40 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 375px) {
+    gap: 113px;
+  }
 }
 
 .erreur-404 {
-  font-size: 100px;
-  font-weight: 700;
-  color: #ff6060;
+  width: 40%;
+
+  @media (max-width: 375px) {
+    width: 75%;
+  }
 }
 
 .erreur-text {
   font-size: 36px;
   font-weight: 500;
   color: #ff6060;
+  text-align: center;
+
+  @media (max-width: 375px) {
+    font-size: 18px;
+  }
 }
 
 .erreur-retour {
   font-size: 18px;
+
+  @media (max-width: 375px) {
+    font-size: 12px;
+  }
 }
 
 .erreur a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #000000;
 }
