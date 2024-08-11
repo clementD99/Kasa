@@ -1,5 +1,14 @@
-.profil {
+.profil-section {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (max-width: 375px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
 }
 
 .profil-nom {
@@ -7,12 +16,11 @@
   color: #ff6060;
   text-align: right;
   width: 88px;
-  position: relative;
-  left: -10px;
-  top: 10px;
+  margin: 15px 5px 15px;
 
   @media (max-width: 375px) {
     font-size: 12px;
+    width: 73px;
   }
 }
 
@@ -22,5 +30,24 @@
 
   @media (max-width: 375px) {
     height: 32px;
+  }
+}
+
+.profil-section .profil {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 375px) {
+    justify-content: flex-end;
+  }
+}
+
+.profil-section .rating {
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: 375px) {
+    justify-content: flex-start;
+        margin-right: auto;
   }
 }
