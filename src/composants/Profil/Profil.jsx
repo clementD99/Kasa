@@ -8,7 +8,7 @@ function Profil({ host }) {
 
   return (
     <div className="profil">
-      <span className="profil-nom">{host.name}</span>
+      <p className="profil-nom">{host.name}</p>
       <img className="profil-photo" src={host.picture} alt={host.name} />
     </div>
   );
