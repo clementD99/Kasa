@@ -1,25 +1,28 @@
 .cards-gallery {
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-color: #f6f6f6;
   border-radius: 25px;
   padding: 30px;
   gap: 30px;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
 
   @media (max-width: 375px) {
     background-color: transparent;
-    margin: 0 20px;
     padding: 0;
   }
 }
 
 .cards-list {
   position: relative;
-  height: 340px;
-  width: 100%;
+  width: 30%;
   border-radius: 10px;
   overflow: hidden;
+
+  @media (max-width: 375px) {
+    width: 100%;
+    height: 255px;
+  }
 }
 
 .cards-list img {
