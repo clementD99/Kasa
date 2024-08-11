@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../composants/Carousel/carousel.scss";
-import flecheGauche from "../../images/carrousel/flecheGauche.png";
-import flecheDroite from "../../images/carrousel/flecheDroite.png";
+import flecheG from "../../images/carrousel/flecheG.svg";
+import flecheD from "../../images/carrousel/flecheD.svg";
 
 
 const Carousel = ({ pictures }) => {
@@ -22,7 +22,7 @@ const Carousel = ({ pictures }) => {
   return (
     <div className="carousel">
       <div onClick={handlePrev} className="carousel-button">
-        <img src={flecheGauche} alt="Précédent" />
+        <img src={flecheG} alt="Précédent" />
       </div>
       <img
         src={pictures[currentIndex]}
@@ -30,7 +30,7 @@ const Carousel = ({ pictures }) => {
         className="carousel-image"
       />
       <div onClick={handleNext} className="carousel-button">
-        <img src={flecheDroite} alt="Suivant" />
+        <img src={flecheD} alt="Suivant" />
       </div>
     </div>
   );
