@@ -4,6 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 375px) {
+    height: 300px;
+  }
 }
 
 .carousel-image {
@@ -26,10 +30,18 @@
   transform: translateY(-50%);
 }
 
+.carousel-button img {
+  width: 50px;
+
+  @media (max-width: 375px) {
+    width: 11px;
+  }
+}
+
 .carousel-button:first-of-type {
-  left: 5px; 
+  left: 5px;
 }
 
 .carousel-button:last-of-type {
-  right: 5px; 
+  right: 5px;
 }
