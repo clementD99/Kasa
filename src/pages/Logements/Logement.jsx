@@ -55,6 +55,40 @@ const Logement = () => {
         <div>Aucune image disponible</div>
       )}
       <div className="logement-description">
+        <div className="logement-details">
+          <h1 className="logement-titre">{logement.title}</h1>
+          <p className="logement-text">{logement.location}</p>
+          <div className="tags-list">
+            {logement.tags.map((tag, index) => (
+              <Tag name={tag} key={index} />
+            ))}
+          </div>
+        </div>
+        <div className="profil-section">
+          <Profil host={logement.host} />
+          <Rate rating={logement.rating} />
+        </div>
+      </div>
+      <div className="collapse-logements">
+        <Collapse title="Description" content={logement.description} />
+        <Collapse title="Équipements" content={logement.equipments} />
+      </div>
+    </div>
+  );
+};
+
+export default Logement;
+
+// code pour récupération //
+
+{
+  /* <div className="logement">
+      {logement.pictures && logement.pictures.length > 0 ? (
+        <Carousel pictures={logement.pictures} />
+      ) : (
+        <div>Aucune image disponible</div>
+      )}
+      <div className="logement-description">
         <div className="logement-titre">
           <h1>{logement.title}</h1>
           <Profil host={logement.host} />
@@ -75,8 +109,5 @@ const Logement = () => {
         <Collapse title="Description" content={logement.description} />
         <Collapse title="Équipements" content={logement.equipments} />
       </div>
-    </div>
-  );
-};
-
-export default Logement;
+    </div> */
+}
