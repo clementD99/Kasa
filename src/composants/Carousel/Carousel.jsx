@@ -3,7 +3,6 @@ import "../../composants/Carousel/carousel.scss";
 import flecheG from "../../images/carrousel/flecheG.svg";
 import flecheD from "../../images/carrousel/flecheD.svg";
 
-
 const Carousel = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -29,6 +28,9 @@ const Carousel = ({ pictures }) => {
         alt={`Logement ${currentIndex + 1}`}
         className="carousel-image"
       />
+      <span className="carousel-chiffres">
+        {currentIndex + 1} / {pictures.length}  
+      </span>
       <div onClick={handleNext} className="carousel-button">
         <img src={flecheD} alt="Suivant" />
       </div>
