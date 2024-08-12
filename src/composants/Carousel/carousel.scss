@@ -26,8 +26,8 @@
 .carousel-button {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  align-items: center;
+  display: flex;
 }
 
 .carousel-button img {
@@ -44,4 +44,18 @@
 
 .carousel-button:last-of-type {
   right: 5px;
+}
+
+// Chiffres affichées sur les images //
+
+.carousel-chiffres {
+  position: absolute;
+  bottom: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFFFFF;
+
+  @media (max-width: 375px) {
+    opacity: 0;
+  }
 }
