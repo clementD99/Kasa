@@ -1,5 +1,5 @@
-import starActive from "../../images/rating/starActive.png";
-import starInactive from "../../images/rating/starInactive.png";
+import starActive from "../../images/rating/starActive.svg";
+import starInactive from "../../images/rating/starInactive.svg";
 import "../../composants/Rate/rate.scss";
 
 const Rate = ({ rating }) => {
