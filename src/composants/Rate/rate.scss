@@ -8,8 +8,20 @@
 
 .starActive {
   color: #ff6060;
+  height: 24px;
+  width: 24px;
+
+  @media (max-width: 375px) {
+    height: 18px;
+  }
 }
 
 .starInactive {
   color: #e3e3e3;
+  height: 24px;
+  width: 24px;
+
+  @media (max-width: 375px) {
+    height: 18px;
+  }
 }
