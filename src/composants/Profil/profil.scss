@@ -20,7 +20,7 @@
 
   @media (max-width: 375px) {
     font-size: 12px;
-    width: 73px;
+    width: 50px;
   }
 }
 
@@ -48,6 +48,7 @@
 
   @media (max-width: 375px) {
     justify-content: flex-start;
-        margin-right: auto;
+    margin-right: auto;
+    align-items: center;
   }
 }
