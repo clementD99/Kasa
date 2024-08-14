@@ -52,3 +52,13 @@
     align-items: center;
   }
 }
+
+.profil-section .rating img {
+  height: 36px;
+  width: 36px;
+
+  @media (max-width: 375px) {
+    height: 18px;
+    width: 18px;
+  }
+}
