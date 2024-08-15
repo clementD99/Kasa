@@ -31,6 +31,12 @@
   @media (max-width: 375px) {
     gap: 60px;
   }
+
+  li {
+    &.active a {
+      text-decoration: underline; // Uniquement pour la page accueil et à propos
+    }
+  }
 }
 
 .header-nav a {
