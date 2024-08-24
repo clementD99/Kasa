@@ -20,7 +20,7 @@ const Logement = () => {
       try {
         const response = await fetch("/logements.json");
         if (!response.ok) {
-          throw new Error("Erreur lors de la récupération des données");
+          throw new Error("Erreur :  pas de données trouvées");
         }
         const result = await response.json();
         const foundLogement = result.find((logement) => logement.id === id);
