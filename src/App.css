@@ -1,0 +1,14 @@
+.App {
+  padding: 50px;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App-logo {
+  height: auto;
+  width: auto;
+}

@@ -1,0 +1,51 @@
+.header {
+  padding: 50px 50px 0 50px;
+
+  @media (max-width: 375px) {
+    padding: 20px;
+  }
+}
+
+.header-elements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  height: auto;
+  width: auto;
+
+  @media (max-width: 375px) {
+    width: 145px;
+  }
+}
+
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 70px;
+  list-style: none;
+
+  @media (max-width: 375px) {
+    gap: 60px;
+  }
+
+  li {
+    &.active a {
+      text-decoration: underline; // Uniquement pour la page accueil et à propos
+    }
+  }
+}
+
+.header-nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+
+  @media (max-width: 375px) {
+    font-size: 12px;
+  }
+}

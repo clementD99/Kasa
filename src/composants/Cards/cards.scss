@@ -1,0 +1,41 @@
+.cards-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 30px;
+  gap: 30px;
+
+  @media (max-width: 375px) {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+.cards-list {
+  position: relative;
+  width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media (max-width: 375px) {
+    width: 100%;
+    height: 255px;
+  }
+}
+
+.cards-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards-list-titre {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  bottom: 10px;
+  left: 10px;
+}
