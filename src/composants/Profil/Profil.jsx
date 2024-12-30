@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "../../composants/Profil/profil.scss";
 
@@ -15,3 +16,22 @@ function Profil({ host }) {
 }
 
 export default Profil;
+=======
+import React from "react";
+import "../../composants/Profil/profil.scss";
+
+function Profil({ host }) {
+  if (!host) {
+    return <div>L'hôte du logement n'a pas été trouvé</div>;
+  }
+
+  return (
+    <div className="profil">
+      <p className="profil-nom">{host.name}</p>
+      <img className="profil-photo" src={host.picture} alt={host.name} />
+    </div>
+  );
+}
+
+export default Profil;
+>>>>>>> 0618f01408ec03809c450b68336ce8eccee9970c

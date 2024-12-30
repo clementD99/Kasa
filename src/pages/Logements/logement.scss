@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .logement {
   padding: 0;
 }
@@ -70,3 +71,77 @@
 .logement .collapse-logements i.rotate {
   transform: rotate(180deg);
 }
+=======
+.logement {
+  padding: 0;
+}
+
+.carte-logement img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.logement-description {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+  }
+}
+
+.logement-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logement-titre {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+
+  @media (max-width: 375px) {
+    font-size: 18px;
+  }
+}
+
+.logement-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+
+  @media (max-width: 375px) {
+    font-size: 14px;
+  }
+}
+
+// Le code css ci-dessous est pour sa mise en forme dans Logement.jsx //
+
+.logement .collapse-logements {
+  display: flex;
+  gap: 100px;
+  margin-top: 25px;
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+    gap: 20px;
+    width: 95%;
+  }
+}
+
+.logement .collapse-logements i {
+  position: absolute;
+  right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logement .collapse-logements i.rotate {
+  transform: rotate(180deg);
+}
+>>>>>>> 0618f01408ec03809c450b68336ce8eccee9970c
