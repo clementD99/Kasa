@@ -40,7 +40,7 @@ function Cards() {
       {data.map((item, index) => (
         <div className="cards-list" key={index}>
             <Link to={`/logement/${item.id}`}>
-              <img src={item.cover} alt={`Image ${index}`} />
+              <img src={item.cover} alt={`Appartement ${index}`} />
             </Link>
           <span className="cards-list-titre">{item.title}</span>
         </div>

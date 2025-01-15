@@ -5,7 +5,7 @@ import erreur from "../../images/erreur/404.png";
 function Erreur() {
   return (
     <div className="erreur">
-      <img className="erreur-404" src={erreur}></img>
+      <img className="erreur-404" src={erreur} alt="erreur 404"></img>
       <p className="erreur-text">
         Oups ! La page que vous demandez n'existe pas.
       </p>
